@@ -162,15 +162,16 @@ body {
     justify-content: start;
     width: 100%;
     align-items: center;
-    height: 55vh;
-    padding-top: 15px;
+    height: 65vh;
+    padding-top: 20px;
   }
   .main-content-container .content-container {
-    width: 550px;
+    width: 500px;
     height: 100%;
     justify-content: start;
     align-items: start;
     margin-right: 100px;
+    padding-top: 100px;
   }
   .main-content-container .landing-page-pic {
     padding-left: 200px;
