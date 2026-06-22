@@ -3,29 +3,56 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 0.6875rem; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preload"
+  href="fonts/open-sans-v44-latin-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin>
+  <link rel="preload" 
+  href="fonts/poppins-v24-latin-600.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin>
+  <link rel="preload" 
+  href="fonts/poppins-v24-latin-regular.woff2"
+  as="font"
+  type="font/woff2"
+  crossorigin>
+  <script src="https://kit.fontawesome.com/dffd574428.js" crossorigin="anonymous"></script>
 </head>
 <body>
+<header class="header-content-container">
+  <div class="logo-container">
+    <img class="logo-of-web-page" src="images/logo.svg" alt="Logo of Web page">
+  </div>
+</header>
 
-  Build The Community Your Fans Will Love
+<main class="main-content-container">
+    <section class="image-content-container">
+      <img class="landing-page-pic" src="images/illustration-mockups.svg" alt="">
+    </section>
+    <section class="content-container">
+      <h1 class="heading">Build The Community Your Fans Will Love</h1>
+      <p class="paragraph-content">Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+        Create connections with your users as you engage in genuine discussion.
+      </p>
+      <button class="register-button" type="button">Register</button>
+    </section>
+</main>
 
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
-      <footer class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </footer>
+<footer class="footer-content-container">
+  <div class="icon-container">
+    <i class="fa-brands fa-facebook-f"></i>
+  </div>
+  <div class="icon-container">
+    <i class="fa-brands fa-twitter"></i>
+  </div>
+  <div class="icon-container">
+    <i class="fa-brands fa-instagram"></i>
+  </div>
+</footer>
 </body>
 </html>
