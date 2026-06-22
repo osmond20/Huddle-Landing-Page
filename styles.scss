@@ -163,20 +163,19 @@ body{
 }
 
 // RESPONSIVE DESIGN
-@media(min-width:90rem){
+@media(min-width:100rem){
     body{
         height: 100vh;
         width: 100%;
         background-image: url(images/bg-desktop.svg);
-        background-position-x: 100px;
-        background-position:left;
-        background-size: cover;
+        background-position-x: 200px;
+        background-size: contain;
     }
 
     .header-content-container{
         height: 165px;
         .logo-container{
-            padding-left: 75.9px;
+            padding-left: 200px;
             .logo-of-web-page{
                 height: 50px;
             }
@@ -185,7 +184,7 @@ body{
 
     .main-content-container{
         flex-direction: row;
-        justify-content: center;
+        justify-content: start;
         width: 100%;
         align-items: center;
         height: 55vh;
@@ -199,7 +198,7 @@ body{
         }
 
         .landing-page-pic{
-            padding-left: 100px;
+            padding-left: 200px;
             height: 525px;
         }
 
@@ -229,7 +228,7 @@ body{
     .footer-content-container{
         justify-content: end;
         padding-right: 100px;
-        width: 1700px;
+        width: 1550px;
         padding-top: 5px;
     }
 }
