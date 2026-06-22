@@ -46,6 +46,7 @@ h1{
     padding:0;
 }
 
+// BODY
 body{
     background-image: url(images/bg-mobile.svg);
     background-repeat:no-repeat;
@@ -58,6 +59,7 @@ body{
     padding: 0;
 }
 
+// HEADER
 .header-content-container{
     height: 100px;
     width: 100%;
@@ -72,6 +74,7 @@ body{
     }
 }
 
+// MAIN CONTENT
 .main-content-container{
     margin: 0;
     display: flex;
@@ -129,6 +132,7 @@ body{
     }
 }
 
+// FOOTER
 .footer-content-container{
     height: 100px;
     display: flex;
@@ -158,6 +162,7 @@ body{
     }
 }
 
+// RESPONSIVE DESIGN
 @media(min-width:90rem){
     body{
         height: 100vh;
