@@ -161,7 +161,6 @@ body {
     width: 100%;
     background-image: url(images/bg-desktop.svg);
     background-size: cover;
-    background-position: center top;
   }
   .header-content-container {
     margin-left: 49px;
