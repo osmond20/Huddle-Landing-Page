@@ -56,15 +56,19 @@ body{
     background-color: var(--purple-700);
     margin:0;
     padding: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 // HEADER
 .header-content-container{
     height: 100px;
-    width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr;
+    justify-self: start;
     align-items: center;
-    justify-content: left;
+
     .logo-container{
         padding-left: 20px;
        .logo-of-web-page{
@@ -76,31 +80,36 @@ body{
 // MAIN CONTENT
 .main-content-container{
     margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 20px;
-    width: 100%;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-self: center;
+    align-self: center;
+
+    .image-content-container{
+        display: flex;
+        justify-content: center;
+    }
 
     .content-container{
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: repeat(3,100px);
+        row-gap: 40px;
+        justify-items: center;
         align-items: center;
         padding-top: 30px;
-        width: 320px;
         font-size: 0.9rem;
     }
     
     .landing-page-pic{
         height: 250px;
-        padding-top: 25px;
     }
 
     .heading{
         font-family: 'Poppins', sans-serif;
         text-align: center;
         color: var(--white);
+        padding: 0px 20px 0px 20px;
+        font-size: clamp(1.5rem, 2vw, 2.35rem);
     }
 
     .paragraph-content{
@@ -135,12 +144,17 @@ body{
 // FOOTER
 .footer-content-container{
     height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows: repeat(1,50px);
+    margin-top: 50px;
+    justify-self: center;
     gap: 10px;
 
     .icon-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         border: 1px solid var(--white);
         border-radius: 100px;
         padding: 10px;
@@ -163,19 +177,20 @@ body{
 }
 
 // RESPONSIVE DESIGN
-@media(min-width:90rem){
+@media(min-width:40rem){
     body{
         height: 100vh;
         width: 100%;
         background-image: url(images/bg-desktop.svg);
-        background-position-x: 210px;
-        background-size: contain;
+        background-size: cover;
     }
 
     .header-content-container{
-        height: 165px;
+        margin-left: 49px;
+        height: 165px; 
+        justify-items: start;
         .logo-container{
-            padding-left: 200px;
+            padding: 0;
             .logo-of-web-page{
                 height: 50px;
             }
@@ -183,30 +198,27 @@ body{
     }
 
     .main-content-container{
-        flex-direction: row;
-        justify-content: start;
-        width: 100%;
-        align-items: center;
-        height: 65vh;
-        padding-top: 20px;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
         .content-container{
             width: 500px;
             height: 100%;
-            justify-content: start;
-            align-items: start;
-            margin-left: 50px;
-            margin-right: 100px;
+            justify-items: start;
             padding-top: 100px;
         }
 
-        .landing-page-pic{
-            padding-left: 200px;
-            height: 525px;
+        .image-content-container{
+            justify-content: end;
+
+            .landing-page-pic{
+                height: 450px;
+            }
         }
 
         .heading{
             text-align: start;
             font-size: 2.35rem;
+            padding: 0;
         }
 
         .paragraph-content{
@@ -228,9 +240,8 @@ body{
     }
 
     .footer-content-container{
-        justify-content: end;
+        justify-self: end;
         padding-right: 100px;
-        width: 1580px;
         padding-top: 5px;
     }
 }
