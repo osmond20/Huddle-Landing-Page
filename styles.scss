@@ -62,18 +62,22 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
 }
+
+
 
 // HEADER
 .header-content-container{
+    padding-top: 20px;
     height: 100px;
-    width: min(100%, 375px);
+    width: 100%;
     max-width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-self: start;
-    align-items: center;
+    align-items: start;
 
     .logo-container{
         padding-left: 20px;
@@ -85,6 +89,7 @@ body{
 
 // MAIN CONTENT
 .main-content-container{
+    height: 100%;
     width: min(100%, 375px);
     max-width: 100%;
     margin: 0;
@@ -202,12 +207,13 @@ body{
     }
 
     .header-content-container{
-        padding-top: 20px;
+        padding-top: 40px;
         padding-left: clamp(1.5rem, 4vw, 3rem);
         width: min(100%, 1440px);
         max-width: 100%;
         height: 165px; 
         justify-self: start;
+        align-items: center;
         .logo-container{
             padding: 0;
             .logo-of-web-page{
