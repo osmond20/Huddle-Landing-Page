@@ -61,15 +61,23 @@ body{
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
     gap: 20px;
 }
 
+.page-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
 
 
 // HEADER
 .header-content-container{
-    padding-top: 20px;
     height: 100px;
     width: 100%;
     max-width: 100%;
@@ -77,7 +85,7 @@ body{
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     justify-self: start;
-    align-items: start;
+    align-items: center;
 
     .logo-container{
         padding-left: 20px;
@@ -206,6 +214,10 @@ body{
 
     }
 
+    .page-content-wrapper{
+        justify-content: flex-start;
+    }
+
     .header-content-container{
         padding-top: 40px;
         padding-left: clamp(1.5rem, 4vw, 3rem);
@@ -272,5 +284,6 @@ body{
         max-width: 100%;
         justify-content:end;
         padding-top: 5px;
+        padding-right: 50px;
     }
 }
